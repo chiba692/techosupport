@@ -3,25 +3,25 @@
 <head>
     <script src="vv.js"></script>
   <title>Отзывы</title>
-    <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
-    <link rel="icon" href="favicon3.ico" type="image/x-icon">
-      <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <style>
     table {
       border-collapse: collapse;
@@ -58,10 +58,35 @@
     padding-right: 0px;
     text-align: left;;
 }
+nav {
+            background-color: #31708E;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;}
   </style>
 </head>
 <body>
-  <h1>Отзыв</h1>
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="styles_mobile.css">
+<link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1024px)" href="styles_tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 1025px) and (max-width: 1366px)" href="styles_laptop.css">
+<link rel="stylesheet" media="screen and (min-width: 1367px)" href="styles_desktop.css">
+<picture>
+  <source srcset="image_small.jpg" media="(max-width: 480px)">
+  <source srcset="image_medium.jpg" media="(min-width: 481px) and (max-width: 1024px)">
+  <source srcset="image_large.jpg" media="(min-width: 1025px)">
+  
+</picture>
+  <h1>Отзывы</h1>
   <table>
     <tr>
       <th>Имя</th>
@@ -88,13 +113,12 @@
 </form>
 
 
-  <div class="menu">
-    <ul>
-<li><a href="https://chiba692.github.io/techsupp/">Часто задаваемые вопросы</a></li>
-<li><a href="https://chiba692.github.io/-/">Обратная связь</a></li>
-<li><a href="https://chiba692.github.io/techosupport/">Написать отзыв</a></li>
-<li><a href="https://chiba692.github.io/techosupp/">Домой</a></li>
-    </ul>
+<nav>
+  <a href="#">О авторе</a>
+  <a href="#">Главная</a>
+  <a href="#">Обратная связь</a>
+  <a href="#">Частозадаваемые вопросы</a>
+</nav>
   </div>
 </body>
 </html>
